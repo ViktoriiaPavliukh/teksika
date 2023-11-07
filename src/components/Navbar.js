@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 export default function Navbar() {
   return (
     <nav>
-      <h1>ТЕКС-ІКА</h1>
+      <h1 className="logo">ТЕКС-ІКА</h1>
       <div className="links">
         <Link to="/about">Про нас</Link>
         <Link to="/catalog">Каталог</Link>
