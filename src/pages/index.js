@@ -5,7 +5,6 @@ export default function Home() {
   return (
     <Layout>
       <section>
-        hi
       </section>
     </Layout>
   )

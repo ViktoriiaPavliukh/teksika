@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
-import "./layout.css";
+import "../styles/layout.css";
 
 export default function Layout({ children }) {
   return (
-    <div className="layout">
+    <div>
       <Navbar />
       <div className="content"> {children}</div>
       <footer>
