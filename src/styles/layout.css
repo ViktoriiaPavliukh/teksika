@@ -44,3 +44,25 @@ body {
   cursor: pointer;
   font-size: 30px;
 }
+
+.content {
+  display: flex;
+  margin-top: 5px;
+  padding-left: 180px;
+  padding-right: 20px;
+  background-image: url("../assets/images/bg-teksika.png");
+  background-repeat: repeat-y;
+  height: 100vh;
+}
+
+.frame {
+  width: 100%;
+  min-height: 300px;
+}
+
+@media screen and(min-width: 1020px) {
+  .content {
+    padding-left: 150px;
+    background-size: 40%;
+  }
+}
