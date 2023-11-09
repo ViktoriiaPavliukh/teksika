@@ -119,6 +119,14 @@ body {
   line-height: 20px;
 }
 
+.text {
+  text-indent: 20px;
+  padding: 3px 10px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 @media screen and (min-width: 1020px) {
   .content {
     padding-left: 150px;
