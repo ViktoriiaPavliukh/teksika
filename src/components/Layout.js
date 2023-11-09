@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-import bg from "../assets/images/bg-teksika.png";
 import "../styles/layout.css";
 
 export default function Layout({ children }) {
