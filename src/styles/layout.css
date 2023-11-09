@@ -53,17 +53,20 @@ body {
   background-image: url("../assets/images/bg-teksika.png");
   background-repeat: repeat-y;
   background-size: 13%;
-  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 }
 
 .frame {
-  width: 100%;
+  border: 1px solid #32104a;
+  border-radius: 6px;
   min-height: 300px;
 }
 
 .title {
   padding-top: 30px;
-  color: #664e4a;
+  color: #32104a;
   text-align: center;
   margin-bottom: 30px;
   text-transform: uppercase;
@@ -71,8 +74,13 @@ body {
   font-weight: 400;
 }
 
+.subtitle {
+  color: #664e4a;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
 .catalog {
-  height: 100vh;
   align-content: center;
 }
 
@@ -85,6 +93,12 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px 20px;
+  list-style: none;
+}
+
+.manager-list,
+.schedule-list {
+  flex-direction: column;
   list-style: none;
 }
 
@@ -125,6 +139,32 @@ body {
   text-align: justify;
   font-size: 16px;
   line-height: 24px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-section {
+  padding-top: 10px;
+  margin-bottom: 5px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
 }
 
 @media screen and (min-width: 1020px) {

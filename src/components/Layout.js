@@ -9,7 +9,7 @@ export default function Layout({ children }) {
       <div className="content">
         <div> {children}</div>
       </div>
-      <footer>
+      <footer className="footer">
         <p>Copyright</p>
       </footer>
     </div>
