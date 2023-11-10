@@ -27,7 +27,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <AppBar position="static" sx={{ backgroundColor: "white" }}>
+      <AppBar position="fixed" sx={{ backgroundColor: "white" }}>
         <Toolbar variant="dense">
           {isSmallScreen && (
             <IconButton

@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 export default function About() {
   return (
     <Layout>
-      <div>
+      <div className="about">
         <h2 className="title">Про нас</h2>
         <p className="text">
           ТОВ «ТЕКС-ІКА» — компанія з постачання матеріалів і фурнітури для
