@@ -38,6 +38,8 @@ export default function Contacts() {
               <a
                 className="link"
                 href="https://www.google.com/maps?q=Київ, Дубровицька, 28, 3й поверх, Україна, 04114"
+                rel="noopener noreferrer"
+                target="_blank"
               >
                 Київ, Дубровицька, 28, 3й поверх, Україна, 04114
               </a>
