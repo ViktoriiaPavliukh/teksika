@@ -9,6 +9,7 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import { Link } from "gatsby";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
   const isSmallScreen = useMediaQuery("(max-width:600px)");
@@ -27,7 +28,10 @@ export default function Navbar() {
 
   return (
     <div>
-      <AppBar position="fixed" sx={{ backgroundColor: "white" }}>
+      <AppBar
+        position="fixed"
+        sx={{ backgroundColor: "white", paddingY: "15px" }}
+      >
         <Toolbar variant="dense">
           {isSmallScreen && (
             <IconButton
@@ -36,7 +40,7 @@ export default function Navbar() {
               sx={{ mr: 2 }}
               onClick={toggleDrawer(true)}
             >
-              <MenuIcon />
+              <MenuIcon sx={{ color: "#694173" }} />
             </IconButton>
           )}
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
@@ -47,37 +51,27 @@ export default function Navbar() {
                 color: "#32104a",
               }}
             >
-              ТЕКС-ІКА
+              ТОВ "ТЕКС-ІКА"
             </Link>
           </Typography>
+          {/* {!isSmallScreen && <LanguageSwitcher />} */}
           {!isSmallScreen && (
             <div className="links">
-              <Link
-                to="/about"
-                className="nav-link"
-              >
+              <Link to="/about" className="nav-link">
                 Про нас
               </Link>
-              <Link
-                to="/catalog"
-                className="nav-link"
-              >
+              <Link to="/catalog" className="nav-link">
                 Каталог
               </Link>
-              <Link
-                to="/questions"
-                className="nav-link"
-              >
+              <Link to="/questions" className="nav-link">
                 Q&A
               </Link>
-              <Link
-                to="/contacts"
-                className="nav-link"
-              >
+              <Link to="/contacts" className="nav-link">
                 Контакти
               </Link>
             </div>
           )}
+          <LanguageSwitcher />
         </Toolbar>
       </AppBar>
       <Drawer
@@ -92,16 +86,24 @@ export default function Navbar() {
         >
           <List>
             <ListItem>
-              <Link to="/about">Про нас</Link>
+              <Link to="/about" className="nav-link">
+                Про нас
+              </Link>
             </ListItem>
             <ListItem>
-              <Link to="/catalog">Каталог</Link>
+              <Link to="/catalog" className="nav-link">
+                Каталог
+              </Link>
             </ListItem>
             <ListItem>
-              <Link to="/questions">Q&A</Link>
+              <Link to="/questions" className="nav-link">
+                Q&A
+              </Link>
             </ListItem>
             <ListItem>
-              <Link to="/contacts">Контакти</Link>
+              <Link to="/contacts" className="nav-link">
+                Контакти
+              </Link>
             </ListItem>
           </List>
         </div>
@@ -109,4 +111,3 @@ export default function Navbar() {
     </div>
   );
 }
-

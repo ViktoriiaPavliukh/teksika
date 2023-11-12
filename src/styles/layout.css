@@ -14,12 +14,14 @@ body {
 }
 
 .layout {
-  background: white;
+  background: #fffefe;
   color: black;
   margin: 0 auto;
 }
 
 .about {
+  padding-top: 80px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,6 +34,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  margin-right: 20px;
 }
 
 .link {
@@ -52,14 +55,11 @@ body {
   transition: all 0.5s ease-out;
 }
 
-.nav-link:hover {
-  border-color: #32104a;
-}
-
 .logo {
   color: #32104a;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 26px;
+  padding: 20px;
 }
 
 .content {
@@ -73,7 +73,8 @@ body {
   justify-content: center;
   align-items: center;
   overflow-y: auto;
-  height: 100vh;
+  min-height: 100vh; 
+  height: 100%;
 }
 
 .frame {
@@ -99,11 +100,17 @@ body {
   margin-bottom: 3px;
 }
 
+.subtitle-list {
+  padding-top: 15px;
+}
+
 .questions-list li {
   margin-bottom: 10px;
 }
 
 .catalog {
+  padding-top: 80px;
+  padding-bottom: 40px;
   align-content: center;
 }
 
@@ -172,7 +179,8 @@ body {
 }
 
 .contacts {
-  padding-top: 30px;
+  padding-top: 80px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -194,7 +202,8 @@ body {
 }
 
 .questions {
-  padding: 20px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   max-width: 600px;
 }
 
@@ -203,25 +212,38 @@ body {
   bottom: 0;
 }
 
+@media screen and (min-width: 570px) {
+  .content {
+    padding-bottom: 100px;
+    padding-left: 100px;
+    background-size: 10%;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+}
 @media screen and (min-width: 1020px) {
   .content {
     padding-left: 150px;
-    background-size: 10%;
+    background-size: 20%;
+  }
+
+  .logo {
+    font-size: 30px;
   }
 
   .catalog {
     align-content: center;
+    padding-left: 10%;
   }
 
   .prom-btn {
     width: 200px;
     height: 50px;
   }
-}
 
-@media screen and (min-width: 570px) {
-  .content {
-    padding-left: 100px;
-    background-size: 10%;
+  .nav-link:hover {
+    border-color: #32104a;
   }
 }
