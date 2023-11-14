@@ -30,7 +30,8 @@ export default function Questions() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Сторінка компанії на Prom.ua{" "}
+                Сторінка компанії на{" "}
+                <span className="link-bold">&nbsp; Prom.ua</span>
               </a>
               <a
                 className="link"
@@ -38,11 +39,10 @@ export default function Questions() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <p className="link">Інстаграм компанії</p>
-                <InstagramIcon
-                  className="link"
-                  style={{ color: "#694173" }}
-                />
+                <p className="link-bold">
+                  Інстаграм <span className="link-thin">компанії&nbsp;</span>
+                </p>
+                <InstagramIcon className="link" style={{ color: "#694173" }} />
               </a>
             </div>
           </li>
@@ -77,6 +77,32 @@ export default function Questions() {
             <p className="text-list">
               Матеріали, які відрізані під замовлення клієнта, поверненню не
               підлягають.
+            </p>
+          </li>
+          <li>
+            <h4 className="subtitle-list">
+              5. У вас багато різновидів тканин?
+            </h4>
+            <p className="text-list">
+              Так, у нас на складі представлений широкий асортимент трикотажних
+              полотен і сіток.
+            </p>
+          </li>
+          <li>
+            <h4 className="subtitle-list">
+              6. Чи можна у вас купувати в роздріб?
+            </h4>
+            <p>
+              Ні, ми не маємо роздрібної торгівлі. Мінімальна партія кожної
+              позиції наведена в профілі нашої компанії на{" "}
+              <a
+                className="link-transfer"
+                rel="noopener noreferrer"
+                target="_blank"
+                href="https://teks-ika.prom.ua/ua/"
+              >
+                Prom.ua
+              </a>
             </p>
           </li>
         </ol>
