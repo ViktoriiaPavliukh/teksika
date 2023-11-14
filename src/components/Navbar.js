@@ -86,6 +86,11 @@ export default function Navbar() {
         >
           <List>
             <ListItem>
+              <Link to="/" className="nav-link">
+                Головна
+              </Link>
+            </ListItem>
+            <ListItem>
               <Link to="/about" className="nav-link">
                 Про нас
               </Link>

@@ -17,11 +17,11 @@ export default function Questions() {
                 className="link"
                 href="https://www.google.com/maps?q=Київ, Дубровицька, 28, 3й поверх, Україна, 04114"
               >
-                Склад в Києві за адресою Дубровицька, 28
+                - Склад в Києві за адресою Дубровицька, 28
               </a>
             </div>
             <div className="text-list">
-              Режим роботи: Пн-Пт: з 9:00 до 16:00
+              &nbsp; &nbsp;Режим роботи: Пн-Пт: з 9:00 до 16:00
             </div>
             <div className="text-list">
               <a
@@ -30,7 +30,7 @@ export default function Questions() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Сторінка компанії на{" "}
+                - Сторінка компанії на{" "}
                 <span className="link-bold">&nbsp; Prom.ua</span>
               </a>
               <a
@@ -39,8 +39,8 @@ export default function Questions() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <p className="link-bold">
-                  Інстаграм <span className="link-thin">компанії&nbsp;</span>
+                <p className="link-thin">
+                  - <span className="link-bold">Instagram</span> компанії&nbsp;
                 </p>
                 <InstagramIcon className="link" style={{ color: "#694173" }} />
               </a>
