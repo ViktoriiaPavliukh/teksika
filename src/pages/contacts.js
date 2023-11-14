@@ -20,18 +20,26 @@ export default function Contacts() {
                 <li>
                   {" "}
                   Менеджер Тетяна:{" "}
-                  <a href="tel:+380674560787"> + (380) 67 456 07 87 </a>
+                  <a className="link" href="tel:+380674560787">
+                    {" "}
+                    + (380) 67 456 07 87{" "}
+                  </a>
                 </li>
                 <li>
                   {" "}
                   Менеджер Анастасія:
-                  <a href="tel:+380731571765"> + (380) 73 157 17 65</a>
+                  <a className="link" href="tel:+380731571765">
+                    {" "}
+                    + (380) 73 157 17 65
+                  </a>
                 </li>
               </ul>
             </div>
             <div className="contact-section">
               <p className="subtitle">Email: </p>
-              <a href="mailto:kuzh_iv@ukr.net">kuzh_iv@ukr.net</a>
+              <a className="link" href="mailto:kuzh_iv@ukr.net">
+                kuzh_iv@ukr.net
+              </a>
             </div>
             <div className="contact-section">
               <p className="subtitle">Адреса:</p>

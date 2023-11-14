@@ -64,7 +64,7 @@ export default function Navbar() {
                 Каталог
               </Link>
               <Link to="/questions" className="nav-link">
-                Q&A
+                FAQ
               </Link>
               <Link to="/contacts" className="nav-link">
                 Контакти
@@ -97,7 +97,7 @@ export default function Navbar() {
             </ListItem>
             <ListItem>
               <Link to="/questions" className="nav-link">
-                Q&A
+                FAQ
               </Link>
             </ListItem>
             <ListItem>

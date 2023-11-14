@@ -42,8 +42,20 @@ body {
   align-items: center;
 }
 
+.link-transfer,
+.link-bold {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.link-thin {
+  font-weight: 400;
+}
+
+.link-transfer:hover,
+.link-bold:hover,
 .link:hover {
-  color: #694173;
+  color: #32104a;
 }
 
 .nav-link {
@@ -73,7 +85,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow-y: auto;
-  min-height: 100vh; 
+  min-height: 100vh;
   height: 100%;
 }
 
@@ -90,7 +102,7 @@ body {
   margin-bottom: 30px;
   text-transform: uppercase;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .subtitle,
@@ -140,26 +152,29 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #694173;
+  /* background-color: #694173; */
+  background-color: white;
   padding: 20px;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.5s ease-out;
   outline: none;
   box-shadow: 3px 1px 1px #32104a;
+  border: 1px solid #694173;
 }
 
 .prom-btn:hover {
-  background-color: #ebe523;
+  background-color: #694173;
 }
 
 .prom-btn:hover .prom-link {
-  color: black;
+  color: white;
 }
 
 .prom-link {
-  color: white;
-  font-weight: 500;
+  /* color: white; */
+  color: #32104a;
+  font-weight: 600;
   text-transform: uppercase;
   line-height: 20px;
 }
@@ -212,6 +227,53 @@ body {
   bottom: 0;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5%;
+  gap: 60px;
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title-main {
+  color: #694173;
+  font-size: 22px;
+  text-transform: uppercase;
+  animation: slideInFromTop 2s ease-in-out;
+}
+
+.slogan {
+  display: flex;
+  align-self: flex-end;
+  padding-top: 70px;
+  text-align: end;
+  color: #32104a;
+  font-size: 30px;
+  text-transform: uppercase;
+  animation: slideInFromBottom 2s ease-in-out;
+}
+
 @media screen and (min-width: 570px) {
   .content {
     padding-bottom: 100px;
@@ -221,6 +283,14 @@ body {
 
   .logo {
     font-size: 20px;
+  }
+
+  .slogan {
+    width: 80%;
+  }
+
+  .main {
+    padding-left: 1%;
   }
 }
 @media screen and (min-width: 1020px) {
@@ -245,5 +315,17 @@ body {
 
   .nav-link:hover {
     border-color: #32104a;
+  }
+
+  .title-main {
+    font-size: 34px;
+  }
+
+  .slogan {
+    font-size: 60px;
+  }
+
+  .main {
+    padding-left: 10%;
   }
 }
