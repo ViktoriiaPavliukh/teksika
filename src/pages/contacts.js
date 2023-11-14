@@ -1,5 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faViber, faTelegram } from "@fortawesome/free-brands-svg-icons";
 
 export default function Contacts() {
   return (
@@ -18,19 +20,15 @@ export default function Contacts() {
               <h4 className="subtitle">Контакти:</h4>
               <ul className="manager-list">
                 <li>
-                  {" "}
-                  Менеджер Тетяна:{" "}
                   <a className="link" href="tel:+380674560787">
-                    {" "}
-                    + (380) 67 456 07 87{" "}
+                    <FontAwesomeIcon icon={faTelegram} className="social" />
+                    Менеджер Тетяна: <br />+ (380) 67 456 07 87{" "}
                   </a>
                 </li>
                 <li>
-                  {" "}
-                  Менеджер Анастасія:
                   <a className="link" href="tel:+380731571765">
-                    {" "}
-                    + (380) 73 157 17 65
+                    <FontAwesomeIcon icon={faViber} className="social" />
+                    Менеджер Анастасія: <br /> + (380) 73 157 17 65
                   </a>
                 </li>
               </ul>
@@ -49,7 +47,7 @@ export default function Contacts() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Київ, Дубровицька, 28, 3й поверх, Україна, 04114
+                Україна, Київ, 04114 <br /> Дубровицька, 28, 3й поверх
               </a>
             </div>
           </div>
