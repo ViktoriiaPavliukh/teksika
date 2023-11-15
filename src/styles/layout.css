@@ -355,9 +355,19 @@ body {
   animation: slideInFromBottom 2s ease-in-out;
 }
 
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (min-width: 570px) {
   .content {
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
     padding-left: 100px;
     background-size: 10%;
   }

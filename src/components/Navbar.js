@@ -54,7 +54,6 @@ export default function Navbar() {
               ТОВ "ТЕКС-ІКА"
             </Link>
           </Typography>
-          {/* {!isSmallScreen && <LanguageSwitcher />} */}
           {!isSmallScreen && (
             <div className="links">
               <Link to="/about" className="nav-link">
