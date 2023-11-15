@@ -97,7 +97,7 @@ body {
 .frame {
   border: 1px solid #32104a;
   border-radius: 6px;
-  min-height: 300px;
+  width: 50vw;
 }
 
 .title {
@@ -154,7 +154,6 @@ body {
   flex-direction: column;
   list-style: none;
 }
-
 
 .prom-btn {
   display: flex;
@@ -248,20 +247,44 @@ body {
 
 .contacts-wrapper {
   display: flex;
-  flex-direction: row;
-  gap: 40px;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 30px;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+}
+
+.left {
+  width: 100%;
 }
 
 .contact-section {
+  padding-left: 5%;
   padding-top: 10px;
   margin-bottom: 5px;
 }
 
+.contact-section .link {
+  font-weight: 500;
+}
+
+.link.address {
+  font-weight: 400;
+}
+
+.icon {
+  width: 60px;
+  border-radius: 6px;
+  margin-right: 1px;
+}
 .social {
   margin-right: 5px;
+  font-size: 20px;
+}
+
+.icons-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .questions {
@@ -321,7 +344,6 @@ body {
   animation: slideInFromTop 2s ease-in-out;
 }
 
-
 .slogan {
   display: flex;
   align-self: flex-end;
@@ -338,6 +360,20 @@ body {
     padding-bottom: 100px;
     padding-left: 100px;
     background-size: 10%;
+  }
+
+  .left {
+    width: 40%;
+  }
+
+  .contacts-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .frame {
+    width: 49%;
+    height: 300px;
   }
 
   .logo {
@@ -381,7 +417,7 @@ body {
     display: block;
     align-self: flex-end;
     justify-self: flex-end;
-}
+  }
 
   .nav-link:hover,
   .nav-link.index:hover {
@@ -389,8 +425,8 @@ body {
   }
 
   .social:hover {
-  color:#32104a;
-}
+    color: #32104a;
+  }
 
   .title-main {
     font-size: 34px;
@@ -402,5 +438,19 @@ body {
 
   .main {
     padding-left: 10%;
+  }
+
+  .contacts-wrapper {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .left {
+    width: 30%;
+  }
+
+  .frame {
+    width: 50vw;
+    min-height: 400px;
   }
 }
