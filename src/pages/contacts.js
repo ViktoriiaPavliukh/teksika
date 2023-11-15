@@ -47,7 +47,6 @@ export default function Contacts() {
                     <InstagramIcon
                       className="social"
                       style={{
-                        color: "#694173",
                         fontSize: "20px",
                         marginRight: "5px",
                       }}
