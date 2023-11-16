@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "@reach/router";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
@@ -13,6 +14,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
   const isSmallScreen = useMediaQuery("(max-width:600px)");
+  const location = useLocation();
 
   const [isDrawerOpen, setDrawerOpen] = useState(false);
 
@@ -56,16 +58,36 @@ export default function Navbar() {
           </Typography>
           {!isSmallScreen && (
             <div className="links">
-              <Link to="/about" className="nav-link">
+              <Link
+                to="/about"
+                className={`nav-link ${
+                  location.pathname === "/about/" ? "active" : ""
+                }`}
+              >
                 Про нас
               </Link>
-              <Link to="/catalog" className="nav-link">
+              <Link
+                to="/catalog"
+                className={`nav-link ${
+                  location.pathname === "/catalog/" ? "active" : ""
+                }`}
+              >
                 Каталог
               </Link>
-              <Link to="/questions" className="nav-link">
+              <Link
+                to="/questions"
+                className={`nav-link ${
+                  location.pathname === "/questions/" ? "active" : ""
+                }`}
+              >
                 FAQ
               </Link>
-              <Link to="/contacts" className="nav-link">
+              <Link
+                to="/contacts"
+                className={`nav-link ${
+                  location.pathname === "/contacts/" ? "active" : ""
+                }`}
+              >
                 Контакти
               </Link>
             </div>
@@ -85,27 +107,52 @@ export default function Navbar() {
         >
           <List>
             <ListItem>
-              <Link to="/" className="nav-link">
+              <Link
+                to="/"
+                className={`nav-link ${
+                  location.pathname === "/" ? "active" : ""
+                }`}
+              >
                 Головна
               </Link>
             </ListItem>
             <ListItem>
-              <Link to="/about" className="nav-link">
+              <Link
+                to="/about"
+                className={`nav-link ${
+                  location.pathname === "/about/" ? "active" : ""
+                }`}
+              >
                 Про нас
               </Link>
             </ListItem>
             <ListItem>
-              <Link to="/catalog" className="nav-link">
+              <Link
+                to="/catalog"
+                className={`nav-link ${
+                  location.pathname === "/catalog/" ? "active" : ""
+                }`}
+              >
                 Каталог
               </Link>
             </ListItem>
             <ListItem>
-              <Link to="/questions" className="nav-link">
+              <Link
+                to="/questions"
+                className={`nav-link ${
+                  location.pathname === "/questions/" ? "active" : ""
+                }`}
+              >
                 FAQ
               </Link>
             </ListItem>
             <ListItem>
-              <Link to="/contacts" className="nav-link">
+              <Link
+                to="/contacts"
+                className={`nav-link ${
+                  location.pathname === "/contacts/" ? "active" : ""
+                }`}
+              >
                 Контакти
               </Link>
             </ListItem>
