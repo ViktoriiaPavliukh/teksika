@@ -1,7 +1,7 @@
 import * as React from "react";
 import Layout from "../components/Layout";
 import { Link } from "gatsby";
-// import intro from "../assets/images/intro.MP4";
+
 import Media from "../components/Media";
 
 export default function Home() {
