@@ -23,7 +23,9 @@
     "@mui/material": "^5.14.17",
     "gatsby": "^5.12.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-intl": "^6.5.5",
+    "react-intl-universal": "^2.9.0"
   },
   "repository": {
     "type": "git",
