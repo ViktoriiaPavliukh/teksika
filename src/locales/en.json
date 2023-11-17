@@ -1,3 +1,14 @@
 {
-  "example.message": "This is an example message for switching to English."
+  "example.message": "This is an example message for switching to English.",
+  "navbar.companyName": "LLC \"TEKS-IKA\"",
+  "navbar.home": "Home",
+  "navbar.aboutUs": "About us",
+  "navbar.catalog": "Catalog",
+  "navbar.faq": "FAQ",
+  "navbar.contacts": "Contacts",
+  "companyDescription": "LLC 'TEKS-IKA' is a company that supplies materials and accessories for the production of underwear, swimwear, sportswear, and more.",
+  "foundedIn": "The company was founded in 2008.",
+  "annualNominee": "Since 2012, the company has been an annual nominee for the 'Company of the Year' award.",
+  "professionalEmployees": "TEKS-IKA's employees have professional knowledge in their field, so we approach each task responsibly and efficiently.",
+  "productsOnStock": "The stock includes: lace, knit fabrics, molded cups, foam, textile elastic, lingerie accessories."
 }

@@ -13,7 +13,6 @@ export default function Layout({ children }) {
         <div className="content">
           <div> {children}</div>
           <div>
-            {/* Test Translation */}
             <FormattedMessage
               id="example.message"
               defaultMessage="This is an example message."
