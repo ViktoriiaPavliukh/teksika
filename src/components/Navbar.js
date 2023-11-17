@@ -11,6 +11,7 @@ import ListItem from "@mui/material/ListItem";
 import { Link } from "gatsby";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { FormattedMessage } from "react-intl";
 
 export default function Navbar() {
   const isSmallScreen = useMediaQuery("(max-width:600px)");
@@ -53,7 +54,10 @@ export default function Navbar() {
                 color: "#32104a",
               }}
             >
-              ТОВ "ТЕКС-ІКА"
+              <FormattedMessage
+                id="navbar.companyName"
+                defaultMessage="ТОВ 'ТЕКС-ІКА'"
+              />
             </Link>
           </Typography>
           {!isSmallScreen && (
@@ -64,7 +68,7 @@ export default function Navbar() {
                   location.pathname === "/about/" ? "active" : ""
                 }`}
               >
-                Про нас
+                <FormattedMessage id="navbar.aboutUs" />
               </Link>
               <Link
                 to="/catalog"
@@ -72,7 +76,7 @@ export default function Navbar() {
                   location.pathname === "/catalog/" ? "active" : ""
                 }`}
               >
-                Каталог
+                <FormattedMessage id="navbar.catalog" />
               </Link>
               <Link
                 to="/questions"
@@ -88,7 +92,7 @@ export default function Navbar() {
                   location.pathname === "/contacts/" ? "active" : ""
                 }`}
               >
-                Контакти
+                <FormattedMessage id="navbar.contacts" />
               </Link>
             </div>
           )}
@@ -113,7 +117,7 @@ export default function Navbar() {
                   location.pathname === "/" ? "active" : ""
                 }`}
               >
-                Головна
+                <FormattedMessage id="navbar.home" />
               </Link>
             </ListItem>
             <ListItem>
@@ -123,7 +127,7 @@ export default function Navbar() {
                   location.pathname === "/about/" ? "active" : ""
                 }`}
               >
-                Про нас
+                <FormattedMessage id="navbar.aboutUs" />
               </Link>
             </ListItem>
             <ListItem>
@@ -133,7 +137,7 @@ export default function Navbar() {
                   location.pathname === "/catalog/" ? "active" : ""
                 }`}
               >
-                Каталог
+                <FormattedMessage id="navbar.catalog" />
               </Link>
             </ListItem>
             <ListItem>
@@ -153,7 +157,7 @@ export default function Navbar() {
                   location.pathname === "/contacts/" ? "active" : ""
                 }`}
               >
-                Контакти
+                <FormattedMessage id="navbar.contacts" />
               </Link>
             </ListItem>
           </List>

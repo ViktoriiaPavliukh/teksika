@@ -4,6 +4,7 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import prom from "../assets/images/prom.jpeg";
 import Typography from "@mui/material/Typography";
+import { FormattedMessage } from "react-intl";
 
 export default function Footer() {
   const isSmallScreen = useMediaQuery("(max-width:768px)");
@@ -35,13 +36,8 @@ export default function Footer() {
             gap: "30px",
           }}
         >
-          <Typography
-            variant="body2"
-            color="#32104a"
-            align="left"
-            // sx={{ flexGrow: 1 }}
-          >
-            Сайт ТОВ «ТЕКС-ІКА»
+          <Typography variant="body2" color="#32104a" align="left">
+            <FormattedMessage id="footer.site" />
           </Typography>
         </Box>
         <Box
@@ -128,7 +124,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              Україна, Київ, 04114, <br /> Дубровицька, 28, 3й поверх
+              <FormattedMessage id="address" />
             </a>
           </Box>
         </Box>
