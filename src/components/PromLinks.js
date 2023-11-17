@@ -1,38 +1,39 @@
 import React from "react";
 import { Link } from "gatsby";
+import { FormattedMessage } from "react-intl";
 
 const ExternalLinksList = () => {
   const externalLinks = [
     {
-      label: "Мереживо",
+      label: <FormattedMessage id="lace" />,
       url: "https://teks-ika.prom.ua/ua/g26496025-merezhivo",
     },
     {
-      label: "Фурнітура для білизни",
+      label: <FormattedMessage id="lingerieAccessories" />,
       url: "https://teks-ika.prom.ua/ua/g26566546-furnitura-dlya-bilizni",
     },
     {
-      label: "Текстильна резинка",
+      label: <FormattedMessage id="textileElastic" />,
       url: "https://teks-ika.prom.ua/ua/g26566545-rezinka-tekstilna",
     },
     {
-      label: "Полотно",
+      label: <FormattedMessage id="fabric" />,
       url: "https://teks-ika.prom.ua/ua/g27899839-polotno",
     },
     {
-      label: "Поролон",
+      label: <FormattedMessage id="foam" />,
       url: "https://teks-ika.prom.ua/ua/g26566580-porolon",
     },
     {
-      label: "Прикраси",
+      label: <FormattedMessage id="decorations" />,
       url: "https://teks-ika.prom.ua/ua/g116760425-ukrasheniya",
     },
     {
-      label: "Сітки",
+      label: <FormattedMessage id="nets" />,
       url: "https://teks-ika.prom.ua/ua/g83511928-sitki",
     },
     {
-      label: "Чашки корсетні",
+      label: <FormattedMessage id="corsetCups" />,
       url: "https://teks-ika.prom.ua/ua/g45261081-chashki-korsetni",
     },
   ];

@@ -12,5 +12,13 @@
   "professionalEmployees": "TEKS-IKA's employees have professional knowledge in their field, so we approach each task responsibly and efficiently.",
   "productsOnStock": "The stock includes: lace, knit fabrics, molded cups, foam, textile elastic, lingerie accessories.",
   "footer.site": "Website of LLC \"TEX-IKA\"",
-  "address": "Ukraine, Kyiv, 04114, Dubrovitska Street, 28, 3rd floor"
+  "address": "Ukraine, Kyiv, 04114, Dubrovitska Street, 28, 3rd floor",
+  "lace": "Lace",
+  "lingerieAccessories": "Lingerie Accessories",
+  "textileElastic": "Elastic Textile ",
+  "fabric": "Fabric",
+  "foam": "Foam",
+  "decorations": "Decorations",
+  "nets": "Nets",
+  "corsetCups": "Corset Cups"
 }
