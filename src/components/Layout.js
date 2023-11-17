@@ -7,20 +7,16 @@ import LanguageProvider from "./LanguageProvider";
 
 export default function Layout({ children }) {
   return (
-    <LanguageProvider>{({ locale, switchLanguage }) => (
-      <div>
-        <Navbar />
-        <div className="content">
-          <div> {children}</div>
-          <div>
-            <FormattedMessage
-              id="example.message"
-              defaultMessage="This is an example message."
-            />
+    <LanguageProvider>
+      {({ locale, switchLanguage }) => (
+        <div>
+          <Navbar />
+          <div className="content">
+            <div> {children}</div>
           </div>
+          <Footer />
         </div>
-        <Footer />
-      </div> )}
+      )}
     </LanguageProvider>
   );
 }
