@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import { FormattedMessage } from "react-intl";
 
 const ExternalLinksList = () => {
@@ -42,14 +41,14 @@ const ExternalLinksList = () => {
     <ul className="list-links">
       {externalLinks.map((link, index) => (
         <li key={index} className="prom-btn">
-          <Link
-            to={link.url}
+          <a
+            href={link.url}
             target="_blank"
             rel="noopener noreferrer"
             className="prom-link"
           >
             {link.label}
-          </Link>
+          </a>
         </li>
       ))}
     </ul>

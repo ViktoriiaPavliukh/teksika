@@ -36,7 +36,7 @@ export default function Footer() {
             gap: "30px",
           }}
         >
-          <Typography variant="body2" color="#32104a" align="left">
+          <Typography variant="body2" color="#32104a" align="left" className="site-title">
             <FormattedMessage id="footer.site" />
           </Typography>
         </Box>
