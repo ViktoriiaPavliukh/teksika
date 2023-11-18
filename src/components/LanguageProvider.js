@@ -1,7 +1,7 @@
 import React, { useState, useEffect, createContext, useContext } from "react";
 import { IntlProvider } from "react-intl";
 import ukLocale from "../locales/uk.json";
-import enLocale from "../locales/en.json"; 
+import enLocale from "../locales/en.json";
 
 const locales = {
   uk: ukLocale,
@@ -19,20 +19,23 @@ export const useLanguage = () => {
 };
 
 const LanguageProvider = ({ children }) => {
-  const savedLocale = localStorage.getItem("language");
+  // Check if window is defined (it's undefined during SSR)
+  const isBrowser = typeof window !== "undefined";
+
+  // Use localStorage only in the browser
+  const savedLocale = isBrowser ? localStorage.getItem("language") : null;
+
   const [locale, setLocale] = useState(savedLocale || "uk");
 
-
- const switchLanguage = (newLocale) => {
-   setLocale(newLocale);
-   localStorage.setItem("language", newLocale);
- };
-
   useEffect(() => {
-    if (!savedLocale) {
-      localStorage.setItem("language", "uk");
+    if (isBrowser) {
+      localStorage.setItem("language", locale);
     }
-  }, [savedLocale]);
+  }, [locale]);
+
+  const switchLanguage = (newLocale) => {
+    setLocale(newLocale);
+  };
 
   return (
     <LanguageContext.Provider value={{ locale, switchLanguage }}>
