@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 import Layout from "../components/Layout";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
@@ -6,22 +7,26 @@ export default function Questions() {
   return (
     <Layout>
       <div className="questions">
-        <h3 className="title">Відповіді на поширені запитання</h3>
+        <h3 className="title">
+          {" "}
+          <FormattedMessage id="navbar.questions" />
+        </h3>
         <ol className="questions-list">
           <li>
             <h4 className="subtitle-list">
-              1. Де можна подивитися асортимент?
+              <FormattedMessage id="question1" />
             </h4>
             <div className="text-list">
               <a
                 className="link"
                 href="https://www.google.com/maps?q=Київ, Дубровицька, 28, 3й поверх, Україна, 04114"
               >
-                - Склад в Києві за адресою Дубровицька, 28
+                <FormattedMessage id="question1Option1" />
               </a>
             </div>
             <div className="text-list">
-              &nbsp; &nbsp;Режим роботи: Пн-Пт: з 9:00 до 16:00
+              &nbsp; &nbsp;
+              <FormattedMessage id="question1Option1Details" />
             </div>
             <div className="text-list">
               <a
@@ -30,7 +35,7 @@ export default function Questions() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                - Сторінка компанії на{" "}
+                <FormattedMessage id="question1Option2" />
                 <span className="link-bold">&nbsp; Prom.ua</span>
               </a>
               <a
@@ -40,7 +45,9 @@ export default function Questions() {
                 target="_blank"
               >
                 <p className="link-thin">
-                  - <span className="link-bold">Instagram</span> компанії&nbsp;
+                  - <span className="link-bold">Instagram</span>{" "}
+                  <FormattedMessage id="question1Option3" />
+                  &nbsp;
                 </p>
                 <InstagramIcon className="link" style={{ color: "#694173" }} />
               </a>
@@ -48,53 +55,50 @@ export default function Questions() {
           </li>
           <li>
             <h4 className="subtitle-list">
-              2. Які є варіанти отримання замовлення?
+              <FormattedMessage id="question2" />
             </h4>
             <div className="text-list">
               <p>
-                - здійснити Самовивіз зі складу в місті Київ, за адресою
-                Дубровицька, 28. (Режим роботи: Пн-Пт: з 9:00 до 16:00).
+                - <FormattedMessage id="question2Option1" />
               </p>
               <p>
-                - замовити Доставку (Доставка здійснюється через сервіс Нова
-                Пошта. При оформленні замовлення, будь ласка, уважно прописуйте
-                Ваші дані для доставки).
+                - <FormattedMessage id="question2Option2" />
               </p>
             </div>
           </li>
           <li>
             <h4 className="subtitle-list">
-              3. Як швидко я отримаю замовлення?
+              <FormattedMessage id="question3" />
             </h4>
             <p className="text-list">
-              Ми відправляємо Ваші замовлення протягом 1-2 робочих днів зі свого
-              складу після підтвердження замовлення та оплати. <br />* Робота
-              поштових служб не врахована у вказаний період.
-            </p>
-          </li>
-          <li>
-            <h4 className="subtitle-list">4. Які умови повернення товару?</h4>{" "}
-            <p className="text-list">
-              Матеріали, які відрізані під замовлення клієнта, поверненню не
-              підлягають.
+              <FormattedMessage id="question3Details1" />
+              <br />
+              <FormattedMessage id="question3Details2" />
             </p>
           </li>
           <li>
             <h4 className="subtitle-list">
-              5. У вас багато різновидів тканин?
-            </h4>
+              {" "}
+              <FormattedMessage id="question4" />
+            </h4>{" "}
             <p className="text-list">
-              Так, у нас на складі представлений широкий асортимент трикотажних
-              полотен і сіток.
+              <FormattedMessage id="question4Details" />
             </p>
           </li>
           <li>
             <h4 className="subtitle-list">
-              6. Чи можна у вас купувати в роздріб?
+              <FormattedMessage id="question5" />
+            </h4>
+            <p className="text-list">
+              <FormattedMessage id="question5Details" />
+            </p>
+          </li>
+          <li>
+            <h4 className="subtitle-list">
+              <FormattedMessage id="question6" />
             </h4>
             <p>
-              Ні, ми не маємо роздрібної торгівлі. Мінімальна партія кожної
-              позиції наведена в профілі нашої компанії на{" "}
+              <FormattedMessage id="question6Details" />
               <a
                 className="link-transfer"
                 rel="noopener noreferrer"

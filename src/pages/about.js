@@ -1,33 +1,29 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { Link } from "gatsby";
-// import { Link, FormattedMessage } from "react-intl";
+import { FormattedMessage } from "react-intl";
 
 export default function About() {
   return (
     <Layout>
       <div className="about">
         <Link to="/" className="nav-link index">
-          На головну
+          <FormattedMessage id="homeDirection" />
         </Link>
-        <h2 className="title">Про нас</h2>
+        <h2 className="title">
+          <FormattedMessage id="navbar.aboutUs" />
+        </h2>
         <p className="text">
-          ТОВ «ТЕКС-ІКА» — компанія з постачання матеріалів і фурнітури для
-          пошиття білизни, купальників, спортивного одягу та іншого.
+          <FormattedMessage id="companyDescription" />
         </p>
         <p className="text">
-          Компанія заснована в 2008 році. За всю нашу діяльність ми відрізали
-          нашим клієнтам мільйони погонних метрів тканин.
+          <FormattedMessage id="foundedIn" />
         </p>
         <p className="text">
-          З 2012 року компанія є щорічним номінантом премії «Компанія року».
-          Співробітники компанії ТЕКС-ІКА володіють професійними знаннями своєї
-          справи, тому ми до кожного завдання підходимо відповідально та
-          ефективно його виконуємо.
+          <FormattedMessage id="annualNominee" />
         </p>
         <p className="text">
-          На складі представлено: мереживо, трикотажні полотна, чашки формовані,
-          поролон, текстильна резинка, фурнітура для білизни.
+          <FormattedMessage id="productsOnStock" />
         </p>
       </div>
     </Layout>

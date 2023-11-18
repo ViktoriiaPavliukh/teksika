@@ -19,15 +19,20 @@ export const useLanguage = () => {
 };
 
 const LanguageProvider = ({ children }) => {
-  const [locale, setLocale] = useState("uk");
+  const savedLocale = localStorage.getItem("language");
+  const [locale, setLocale] = useState(savedLocale || "uk");
+
+
+ const switchLanguage = (newLocale) => {
+   setLocale(newLocale);
+   localStorage.setItem("language", newLocale);
+ };
 
   useEffect(() => {
-    setLocale("uk");
-  }, []);
-
-  const switchLanguage = (newLocale) => {
-    setLocale(newLocale);
-  };
+    if (!savedLocale) {
+      localStorage.setItem("language", "uk");
+    }
+  }, [savedLocale]);
 
   return (
     <LanguageContext.Provider value={{ locale, switchLanguage }}>
