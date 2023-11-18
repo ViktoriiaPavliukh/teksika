@@ -1,26 +1,41 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 import Layout from "../components/Layout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faViber } from "@fortawesome/free-brands-svg-icons";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import prom from "../assets/images/prom.jpeg"
+import prom from "../assets/images/prom.jpeg";
 
 export default function Contacts() {
   return (
     <Layout>
       <div className="contacts">
-        <h3 className="title">Контакти</h3>
+        <h3 className="title">
+          {" "}
+          <FormattedMessage id="navbar.contacts" />
+        </h3>
         <div className="contacts-wrapper">
           <div className="left">
             <div className="contact-section">
-              <h4 className="subtitle">Графік роботи:</h4>
+              <h4 className="subtitle">
+                {" "}
+                <FormattedMessage id="companySchedule" />
+              </h4>
               <ul className="schedule-list">
-                <li> ПН-ПТ 9:00-16:00</li> <li>СБ-НД вихідні</li>
+                <li>
+                  {" "}
+                  <FormattedMessage id="companyScheduleWeekdays" />
+                </li>{" "}
+                <li>
+                  <FormattedMessage id="companyScheduleWeekends" />
+                </li>
               </ul>
             </div>
             <div className="contact-section">
-              <h4 className="subtitle">Контакти:</h4>
+              <h4 className="subtitle">
+                <FormattedMessage id="navbar.contacts" />:
+              </h4>
               <ul className="manager-list">
                 <li>
                   <a className="link" href="tel:+380674560787">
@@ -28,13 +43,15 @@ export default function Contacts() {
                       <TelegramIcon className="social" />
                       <FontAwesomeIcon icon={faViber} className="social" />
                     </div>
-                    Менеджер Тетяна: <br />+ (380) 67 456 07 87{" "}
+                    <FormattedMessage id="contactManagerTetiana" />
+                    <br />+ (380) 67 456 07 87{" "}
                   </a>
                 </li>
                 <li>
                   <a className="link" href="tel:+380731571765">
                     <FontAwesomeIcon icon={faViber} className="social" />
-                    Менеджер Анастасія: <br /> + (380) 73 157 17 65
+                    <FormattedMessage id="contactManagerAnastasia" /> <br /> +
+                    (380) 73 157 17 65
                   </a>
                 </li>
                 <li>
@@ -57,14 +74,16 @@ export default function Contacts() {
               </ul>
             </div>
             <div className="contact-section">
-              <h4 className="subtitle">Каталог товарів:</h4>
+              <h4 className="subtitle">
+                <FormattedMessage id="productCatalog" />
+              </h4>
               <a
                 className="link"
                 href="https://teks-ika.prom.ua"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <img className="icon" src={prom} alt="prom.ua"/>
+                <img className="icon" src={prom} alt="prom.ua" />
                 Prom.ua
               </a>
             </div>
@@ -75,14 +94,16 @@ export default function Contacts() {
               </a>
             </div>
             <div className="contact-section">
-              <p className="subtitle">Адреса:</p>
+              <p className="subtitle">
+                <FormattedMessage id="addressTitle" />
+              </p>
               <a
                 className="link address"
                 href="https://www.google.com/maps?q=Київ, Дубровицька, 28, 3й поверх, Україна, 04114"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Україна, Київ, 04114 <br /> Дубровицька, 28, 3й поверх
+                <FormattedMessage id="address" />
               </a>
             </div>
           </div>

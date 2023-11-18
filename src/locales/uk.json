@@ -20,5 +20,13 @@
   "foam": "Поролон",
   "decorations": "Прикраси",
   "nets": "Сітки",
-  "corsetCups": "Чашки корсетні"
+  "corsetCups": "Чашки корсетні",
+  "companySchedule": "Графік роботи:",
+  "companyScheduleWeekdays": "ПН-ПТ 9:00-16:00",
+  "companyScheduleWeekends": "СБ-НД вихідні",
+  "contactDetails": "Контактна інформація:",
+  "contactManagerTetiana": "Менеджер Тетяна",
+  "contactManagerAnastasia": "Менеджер Анастасія",
+  "productCatalog": "Каталог товарів:",
+  "addressTitle": "Адреса:"
 }

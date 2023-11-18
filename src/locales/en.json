@@ -12,7 +12,7 @@
   "annualNominee": "Since 2012, the company has been an annual nominee for the 'Company of the Year' award. Our employees have professional knowledge in their field, so we approach each task responsibly and efficiently.",
   "productsOnStock": "The stock includes: lace, knit fabrics, molded cups, foam, textile elastic, lingerie accessories.",
   "footer.site": "Website of LLC \"TEX-IKA\"",
-  "address": "Ukraine, Kyiv, 04114, Dubrovitska Street, 28, 3rd floor",
+  "address": "Ukraine, Kyiv, 04114, Dubrovytska Street, 28, 3rd floor",
   "catalog": "Catalog",
   "lace": "Lace",
   "lingerieAccessories": "Lingerie Accessories",
@@ -21,5 +21,13 @@
   "foam": "Foam",
   "decorations": "Decorations",
   "nets": "Nets",
-  "corsetCups": "Corset Cups"
+  "corsetCups": "Corset Cups",
+  "companySchedule": "Working hours:",
+  "companyScheduleWeekdays": "Mon-Fri 9:00-16:00",
+  "companyScheduleWeekends": "Sat-Sun closed",
+  "contactDetails": "Contact Details:",
+  "contactManagerTetiana": "Manager Tetiana",
+  "contactManagerAnastasia": "Manager Anastasia",
+  "productCatalog": "Catalog:",
+  "addressTitle": "Address:"
 }
