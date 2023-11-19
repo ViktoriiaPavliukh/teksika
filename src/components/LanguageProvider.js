@@ -19,19 +19,14 @@ export const useLanguage = () => {
 };
 
 const LanguageProvider = ({ children }) => {
-  // Check if window is defined (it's undefined during SSR)
-  const isBrowser = typeof window !== "undefined";
-
-  // Use localStorage only in the browser
-  const savedLocale = isBrowser ? localStorage.getItem("language") : null;
-
-  const [locale, setLocale] = useState(savedLocale || "uk");
+  const [locale, setLocale] = useState("uk");
 
   useEffect(() => {
-    if (isBrowser) {
-      localStorage.setItem("language", locale);
-    }
-  }, [locale]);
+    const isBrowser = typeof window !== "undefined";
+    const savedLocale = isBrowser ? localStorage.getItem("language") : null;
+
+    setLocale(savedLocale || "uk");
+  }, []);
 
   const switchLanguage = (newLocale) => {
     setLocale(newLocale);
@@ -47,37 +42,3 @@ const LanguageProvider = ({ children }) => {
 };
 
 export default LanguageProvider;
-
-// // src/components/LanguageProvider.js
-// import React, { useState, useEffect, createContext, useContext } from "react";
-// import { IntlProvider } from "react-intl";
-// import ukLocale from "../locales/uk.json"; // Import your Ukrainian translations
-// import enLocale from "../locales/en.json"; // Import your English translations
-
-// const locales = {
-//   uk: ukLocale,
-//   en: enLocale,
-// };
-
-// const LanguageProvider = ({ children }) => {
-//   const [locale, setLocale] = useState("uk");
-
-//   useEffect(() => {
-//     // Set initial locale based on user preference or other logic
-//     // For simplicity, let's default to Ukrainian
-//     // You might want to enhance this logic based on user preferences or browser language detection
-//     setLocale("uk");
-//   }, []);
-
-//   const switchLanguage = (newLocale) => {
-//     setLocale(newLocale);
-//   };
-
-//   return (
-//     <IntlProvider locale={locale} messages={locales[locale]}>
-//       {children({ locale, switchLanguage })}
-//     </IntlProvider>
-//   );
-// };
-
-// export default LanguageProvider;

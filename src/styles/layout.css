@@ -112,6 +112,7 @@ body {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .subtitle,
@@ -263,14 +264,9 @@ body {
 }
 
 .contact-section {
-  padding-left: 5%;
   padding-top: 10px;
   margin-bottom: 5px;
 }
-
-/* .contact-section .link {
-  font-weight: 500;
-} */
 
 .link.address {
   font-weight: 400;
@@ -304,7 +300,6 @@ body {
 }
 
 .main {
-  width: 83%;
   display: flex;
   flex-direction: column;
   padding-left: 5%;
@@ -320,7 +315,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5%;
+  gap: 14%;
 }
 
 .media {
@@ -361,8 +356,10 @@ body {
 .title-main {
   color: #694173;
   font-size: 22px;
+  text-align: left;
   text-transform: uppercase;
   animation: slideInFromTop 2s ease-in-out;
+  letter-spacing: 2px;
 }
 
 .slogan {
@@ -384,10 +381,10 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  font-family: "Raleway", sans-serif;
 }
 
 .site-title {
-  font-family: "Raleway", sans-serif;
   font-size: 16px;
 }
 
@@ -424,7 +421,6 @@ body {
   }
 
   .main {
-    width: 60%;
     padding-left: 1%;
     gap: 60px;
   }
@@ -491,6 +487,10 @@ body {
   .contacts-wrapper {
     flex-direction: row;
     flex-wrap: nowrap;
+  }
+
+  .contact-section {
+    padding-left: 5%;
   }
 
   .left {

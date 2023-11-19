@@ -9,12 +9,14 @@ export default function Media() {
     <Card
       component="div"
       sx={{
-        maxWidth: "420px",
+        minWidth: "220px",
+        manWidth: "430px",
         height: "450px",
+        padding: "0",
         flexGrow: 1,
         borderRadius: "26px",
         "@media screen and (max-width: 600px)": {
-          width: "200px", // Adjust styles for smaller screens
+          width: "200px"
         },
       }}
     >

@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Toolbar, Box, useMediaQuery } from "@mui/material";
+import { AppBar, Toolbar, Box, Paper, useMediaQuery } from "@mui/material";
 import PhoneIcon from "@mui/icons-material/Phone";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import prom from "../assets/images/prom.jpeg";
@@ -10,13 +10,7 @@ export default function Footer() {
   const isSmallScreen = useMediaQuery("(max-width:768px)");
 
   return (
-    <AppBar
-      position="static"
-      sx={{
-        backgroundColor: "white",
-        paddingY: "1px",
-      }}
-    >
+    <Paper elevation={3} sx={{ paddingY: "5px" }}>
       <Toolbar
         sx={{
           display: "flex",
@@ -31,12 +25,19 @@ export default function Footer() {
           sx={{
             display: "flex",
             flexDirection: "row",
-            justifyContent: "space=between",
+            justifyContent: "space-between",
             alignItems: "center",
             gap: "30px",
+            fontFamily: "'Raleway', sans-serif",
           }}
         >
-          <Typography variant="body2" color="#32104a" align="left" className="site-title">
+          <Typography
+            variant="body2"
+            color="#32104a"
+            align="left"
+            className="site-title"
+            sx={{ fontFamily: "'Raleway', sans-serif" }}
+          >
             <FormattedMessage id="footer.site" />
           </Typography>
         </Box>
@@ -64,6 +65,7 @@ export default function Footer() {
               target="_blank"
             >
               <InstagramIcon
+                color="#694173"
                 sx={{
                   fontSize: 20,
                   cursor: "pointer",
@@ -129,6 +131,6 @@ export default function Footer() {
           </Box>
         </Box>
       </Toolbar>
-    </AppBar>
+    </Paper>
   );
 }
