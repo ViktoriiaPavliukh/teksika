@@ -110,15 +110,19 @@ export default function Footer() {
               }}
             />
             <Box>
-              <a className="link" href="tel:+380674560787">
+              <a className="link phone" href="tel:+380674560787">
                 + (380) 67 456 07 87
               </a>
-              <a className="link" href="tel:+380731571765">
+              <a className="link phone" href="tel:+380731571765">
                 + (380) 73 157 17 65
               </a>
             </Box>
           </Box>
-          <Box sx={{ textAlign: isSmallScreen ? "center" : "left" }}>
+          <Box
+            sx={{
+              textAlign: isSmallScreen ? "center" : "left",
+            }}
+          >
             {" "}
             <a
               className="link address"
