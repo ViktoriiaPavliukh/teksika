@@ -125,7 +125,7 @@ export default function Footer() {
           >
             {" "}
             <a
-              className="link address"
+              className="link footer"
               href="https://www.google.com/maps?q=Київ, Дубровицька, 28, 3й поверх, Україна, 04114"
               rel="noopener noreferrer"
               target="_blank"
