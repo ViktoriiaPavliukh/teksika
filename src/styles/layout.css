@@ -58,7 +58,7 @@ body {
 
 .link-transfer:hover,
 .link-bold:hover,
-.link:hover, 
+.link:hover,
 .link.address:hover {
   color: #32104a;
 }
@@ -88,12 +88,13 @@ body {
 }
 
 .content {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 5px;
   padding-left: 70px;
   padding-right: 20px;
-  background-image: url("../assets/images/bg-teksika.png");
+  /* background-image: url("../assets/images/bg-teksika.png"); */
   background-repeat: repeat-y;
   background-size: 14%;
   justify-content: center;
@@ -101,6 +102,37 @@ body {
   overflow-y: auto;
   min-height: 90vh;
   height: 100%;
+}
+/* .content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  padding-left: 70px;
+  padding-right: 20px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  min-height: 90vh;
+  height: 100%;
+  background-color: white;
+  background-size: 14%;
+  
+}
+} */
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../assets/images/bg-teksika.png");
+  background-repeat: repeat-y;
+  opacity: 0.8;
+  background-size: 10%;
+  height: 100%;
+  background-repeat: repeat-y;
 }
 
 .frame {
@@ -438,8 +470,12 @@ body {
 @media screen and (min-width: 1020px) {
   .content {
     padding-left: 150px;
-    background-size: 20%;
+    /* background-size: 20%; */
     min-height: 90vh;
+  }
+
+  .content::before {
+    background-size: 18%;
   }
 
   .logo {
@@ -467,9 +503,10 @@ body {
   }
 
   .nav-link.index {
-    display: block;
+    display: flex;
     align-self: flex-end;
     justify-self: flex-end;
+    cursor: pointer;
   }
 
   .nav-link:hover,
