@@ -7,9 +7,9 @@ export default function About() {
   return (
     <Layout>
       <div className="about">
-        <Link to="/" className="nav-link index">
+        {/* <Link to="/" className="nav-link index">
           <FormattedMessage id="homeDirection" />
-        </Link>
+        </Link> */}
         <h2 className="title">
           <FormattedMessage id="navbar.aboutUs" />
         </h2>

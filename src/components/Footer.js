@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Toolbar, Box, Paper, useMediaQuery } from "@mui/material";
+import { Toolbar, Box, Paper, useMediaQuery } from "@mui/material";
 import PhoneIcon from "@mui/icons-material/Phone";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import prom from "../assets/images/prom.jpeg";

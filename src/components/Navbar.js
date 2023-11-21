@@ -14,7 +14,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import { FormattedMessage } from "react-intl";
 
 export default function Navbar() {
-  const isSmallScreen = useMediaQuery("(max-width:600px)");
+  const isSmallScreen = useMediaQuery("(max-width:700px)");
   const location = useLocation();
 
   const [isDrawerOpen, setDrawerOpen] = useState(false);
@@ -62,6 +62,14 @@ export default function Navbar() {
           </Typography>
           {!isSmallScreen && (
             <div className="links">
+              <Link
+                to="/"
+                className={`nav-link ${
+                  location.pathname === "/" ? "active" : ""
+                }`}
+              >
+                <FormattedMessage id="navbar.home" />
+              </Link>
               <Link
                 to="/about"
                 className={`nav-link ${
