@@ -36,7 +36,9 @@ export default function Footer() {
             color="#32104a"
             align="left"
             className="site-title"
-            sx={{ fontFamily: "'Raleway', sans-serif" }}
+            sx={{
+              fontFamily: "'Raleway', sans-serif"
+            }}
           >
             <FormattedMessage id="footer.site" />
           </Typography>
