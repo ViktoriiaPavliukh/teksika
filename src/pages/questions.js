@@ -24,7 +24,7 @@ export default function Questions() {
                 <FormattedMessage id="question1Option1" />
               </a>
             </div>
-            <div className="text-list">
+            <div className="text-list grey">
               &nbsp; &nbsp;
               <FormattedMessage id="question1Option1Details" />
             </div>
@@ -49,7 +49,6 @@ export default function Questions() {
                   <FormattedMessage id="question1Option3" />
                   &nbsp;
                 </p>
-                <InstagramIcon className="link" style={{ color: "#694173" }} />
               </a>
             </div>
           </li>
@@ -60,9 +59,16 @@ export default function Questions() {
             <div className="text-list">
               <p>
                 - <FormattedMessage id="question2Option1" />
+                <span className="text-grey">
+                  <FormattedMessage id="question2Option1Span" />
+                </span>
               </p>
+
               <p>
                 - <FormattedMessage id="question2Option2" />
+                <span className="text-grey">
+                  <FormattedMessage id="question2Option2Span" />
+                </span>
               </p>
             </div>
           </li>
@@ -73,7 +79,9 @@ export default function Questions() {
             <p className="text-list">
               <FormattedMessage id="question3Details1" />
               <br />
-              <FormattedMessage id="question3Details2" />
+              <span className="text-grey">
+                <FormattedMessage id="question3Details2" />
+              </span>
             </p>
           </li>
           <li>
@@ -83,14 +91,6 @@ export default function Questions() {
             </h4>{" "}
             <p className="text-list">
               <FormattedMessage id="question4Details" />
-            </p>
-          </li>
-          <li>
-            <h4 className="subtitle-list">
-              <FormattedMessage id="question5" />
-            </h4>
-            <p className="text-list">
-              <FormattedMessage id="question5Details" />
             </p>
           </li>
           <li>

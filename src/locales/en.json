@@ -40,8 +40,10 @@
   "question1Option2": "- Company page on",
   "question1Option3": "of company",
   "question2": "2. What are the options for receiving an order?",
-  "question2Option1": "Self-pickup from the warehouse in Kyiv at Dubrovytska Street, 28 (Working hours: Mon-Fri 9:00am to 4:00pm).",
-  "question2Option2": "order Delivery (is carried out through the Nova Poshta service. When placing an order, please carefully enter your delivery details).",
+  "question2Option1": "Self-pickup from the warehouse in Kyiv at Dubrovytska Street, 28 ",
+  "question2Option1Span": "(Working hours: Mon-Fri 9:00am to 4:00pm).",
+  "question2Option2": "order Delivery ",
+  "question2Option2Span": "(is carried out through the Nova Poshta service. When placing an order, please carefully enter your delivery details).",
   "question3": "3. How quickly will I receive the order?",
   "question3Details1": "We dispatch your orders within 1-2 business days from our warehouse, after order confirmation and payment.",
   "question3Details2": "* Postal service operation is not included in the specified period.",
@@ -49,6 +51,6 @@
   "question4Details": "Materials cut to order by the customer are not subject to return.",
   "question5": "5. Do you have a variety of fabrics?",
   "question5Details": "Yes, our warehouse offers a wide range of knitted fabrics and nets.",
-  "question6": "6. Can I buy retail from you?",
+  "question6": "5. Can I buy retail from you?",
   "question6Details": "No, we do not have retail sales. The minimum order quantity for each item is specified in the profile of our company on "
 }

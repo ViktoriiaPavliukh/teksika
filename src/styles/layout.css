@@ -293,6 +293,10 @@ body {
   margin-bottom: 5px;
 }
 
+.text-list.grey, .text-grey {
+  color: #717375;
+}
+
 .contacts {
   padding-top: 80px;
   padding-bottom: 40px;
