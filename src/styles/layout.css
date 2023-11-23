@@ -489,7 +489,7 @@ body {
   .content {
     padding-left: 150px;
     /* background-size: 20%; */
-    min-height: 90vh;
+    min-height: 95vh;
   }
 
   .content::before {
@@ -576,5 +576,27 @@ body {
   .frame {
     width: 45vw;
     min-height: 400px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .content {
+    min-height: 100vh;
+  }
+
+  .contact-section {
+    padding-left: 30%;
+  }
+
+  .contacts-wrapper {
+    gap: 5%;
+  }
+
+  .frame {
+    width: 35vw;
+  }
+
+  .catalog {
+    max-width: 1200px;
   }
 }
