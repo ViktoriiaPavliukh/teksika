@@ -18,6 +18,19 @@ export default function Contacts() {
         <div className="contacts-wrapper">
           <div className="left">
             <div className="contact-section">
+              <p className="subtitle">
+                <FormattedMessage id="addressTitle" />
+              </p>
+              <a
+                className="link address"
+                href="https://www.google.com/maps?q=Київ, Дубровицька, 28, 3й поверх, Україна, 04114"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <FormattedMessage id="address" />
+              </a>
+            </div>
+            <div className="contact-section">
               <h4 className="subtitle">
                 {" "}
                 <FormattedMessage id="companySchedule" />
@@ -74,6 +87,12 @@ export default function Contacts() {
               </ul>
             </div>
             <div className="contact-section">
+              <p className="subtitle">Email: </p>
+              <a className="link" href="mailto:kuzh_iv@ukr.net">
+                kuzh_iv@ukr.net
+              </a>
+            </div>
+            <div className="contact-section">
               <h4 className="subtitle">
                 <FormattedMessage id="productCatalog" />
               </h4>
@@ -85,25 +104,6 @@ export default function Contacts() {
               >
                 <img className="icon" src={prom} alt="prom.ua" />
                 Prom.ua
-              </a>
-            </div>
-            <div className="contact-section">
-              <p className="subtitle">Email: </p>
-              <a className="link" href="mailto:kuzh_iv@ukr.net">
-                kuzh_iv@ukr.net
-              </a>
-            </div>
-            <div className="contact-section">
-              <p className="subtitle">
-                <FormattedMessage id="addressTitle" />
-              </p>
-              <a
-                className="link address"
-                href="https://www.google.com/maps?q=Київ, Дубровицька, 28, 3й поверх, Україна, 04114"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <FormattedMessage id="address" />
               </a>
             </div>
           </div>
