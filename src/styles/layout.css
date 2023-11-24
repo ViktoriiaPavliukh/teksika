@@ -212,7 +212,7 @@ body {
   list-style: none;
 }
 
-.prom-link {
+.link-prom {
   display: flex;
   padding: 0;
   width: 200px;
@@ -229,7 +229,7 @@ body {
   border: 1px solid #694173;
 }
 
-.prom-link:hover {
+.link-prom:hover {
   background-color: white;
 }
 
@@ -238,7 +238,7 @@ body {
   color: white;
 }
 
-.prom-link:hover .prom-btn {
+.link-prom:hover .btn-prom {
   color: #32104a;
 }
 
@@ -274,7 +274,7 @@ body {
 
 
 
-.prom-btn {
+.btn-prom {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -45,9 +45,9 @@ const ExternalLinksList = () => {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="prom-link"
+            className="link-prom"
           >
-            <p className="prom-btn">{link.label}</p>
+            <p className="btn-prom">{link.label}</p>
           </a>
         </li>
       ))}
