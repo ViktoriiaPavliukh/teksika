@@ -277,6 +277,7 @@ body {
   text-transform: uppercase;
   line-height: 20px;
   letter-spacing: 2px;
+  padding: 100%;
 }
 
 .text {
@@ -295,7 +296,7 @@ body {
 
 .text-list.grey,
 .text-grey {
-  color: #717375;
+  color: #474848;
 }
 
 .contacts {
@@ -321,7 +322,7 @@ body {
 
 .contact-section {
   padding-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .link.address,
@@ -419,7 +420,7 @@ body {
   font-size: 22px;
   text-align: center;
   text-transform: uppercase;
-  animation: slideInFromTop 2s ease-in-out;
+  /* animation: slideInFromTop 2s ease-in-out; */
   letter-spacing: 2px;
   font-weight: 500;
 }

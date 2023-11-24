@@ -92,7 +92,7 @@ export default function Contacts() {
                 kuzh_iv@ukr.net
               </a>
             </div>
-            <div className="contact-section">
+            {/* <div className="contact-section">
               <h4 className="subtitle">
                 <FormattedMessage id="productCatalog" />
               </h4>
@@ -105,7 +105,7 @@ export default function Contacts() {
                 <img className="icon" src={prom} alt="prom.ua" />
                 Prom.ua
               </a>
-            </div>
+            </div> */}
           </div>
           <iframe
             className="frame"
