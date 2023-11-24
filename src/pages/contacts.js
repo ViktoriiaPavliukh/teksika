@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faViber } from "@fortawesome/free-brands-svg-icons";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import prom from "../assets/images/prom.jpeg";
 
 export default function Contacts() {
   return (
