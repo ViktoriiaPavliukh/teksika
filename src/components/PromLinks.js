@@ -40,14 +40,14 @@ const ExternalLinksList = () => {
   return (
     <ul className="list-links">
       {externalLinks.map((link, index) => (
-        <li key={index} className="prom-btn">
+        <li key={index}>
           <a
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
             className="prom-link"
           >
-            {link.label}
+            <p className="prom-btn">{link.label}</p>
           </a>
         </li>
       ))}
