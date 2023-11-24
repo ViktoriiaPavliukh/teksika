@@ -9,6 +9,7 @@
  */
 module.exports = {
   plugins: [
+    "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -23,6 +24,11 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: "ТЕКС-ІКА",
+    languages: ["uk", "en"],
+    defaultLanguage: "uk",
+    titles: {
+      uk: 'ТОВ "ТЕКС-ІКА"',
+      en: 'LLC "TEKS-IKA"',
+    },
   },
 };
