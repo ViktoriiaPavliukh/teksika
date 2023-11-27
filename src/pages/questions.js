@@ -78,8 +78,9 @@ export default function Questions() {
             </h4>
             <p className="text-list">
               <FormattedMessage id="question3Details1" />
-              <br />
               <span className="text-grey">
+                {" "}
+                &#8727;
                 <FormattedMessage id="question3Details2" />
               </span>
             </p>
