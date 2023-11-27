@@ -22,6 +22,14 @@ module.exports = {
         icon: `src/assets/images/favicon.jpeg`,
       },
     },
+    {
+      resolve: "gatsby-plugin-postcss",
+      options: {
+        postCssPlugins: [
+          require("autoprefixer"),
+        ],
+      },
+    },
   ],
   siteMetadata: {
     languages: ["uk", "en"],

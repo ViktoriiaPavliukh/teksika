@@ -21,8 +21,7 @@ export default function Layout({ children }) {
     }
   `);
 
-  const { defaultLanguage, titles } = data.site.siteMetadata;
-  const title = titles[defaultLanguage];
+  const { titles } = data.site.siteMetadata;
 
   return (
     <LanguageProvider>
