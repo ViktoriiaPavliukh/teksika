@@ -17,7 +17,7 @@ export default function Footer() {
           flexDirection: isSmallScreen ? "column" : "row",
           justifyContent: "space-between",
           alignItems: "center",
-          gap: isSmallScreen ? "10px" : "0",
+          gap: 0,
           paddingY: isSmallScreen ? "20px" : "0",
         }}
       >
@@ -49,7 +49,7 @@ export default function Footer() {
             flexDirection: isSmallScreen ? "column" : "row",
             justifyContent: "space-between",
             alignItems: "center",
-            gap: isSmallScreen ? "7px" : "20px",
+            gap: isSmallScreen ? "0" : "20px",
           }}
         >
           <Box
@@ -123,6 +123,7 @@ export default function Footer() {
           <Box
             sx={{
               textAlign: isSmallScreen ? "center" : "left",
+              paddingTop: isSmallScreen ? "7px" : 0,
             }}
           >
             {" "}

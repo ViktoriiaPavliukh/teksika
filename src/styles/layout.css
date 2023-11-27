@@ -272,8 +272,6 @@ body {
   color: #32104a;
 }
 
-
-
 .btn-prom {
   display: flex;
   justify-content: center;
@@ -330,10 +328,14 @@ body {
   margin-bottom: 15px;
 }
 
-.link.address,
-.link.footer {
+.link.address {
   font-weight: 400;
   max-width: 237px;
+}
+
+.link.footer {
+  font-weight: 400;
+  max-width: 168px;
 }
 
 .link.footer {
