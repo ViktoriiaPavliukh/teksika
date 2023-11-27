@@ -1,23 +1,6 @@
-// import React from "react";
-// import { Link } from "gatsby";
-
-// export default function NotFound() {
-//   return (
-//     <div>
-//       <h2>404</h2>
-//       <p>Вибачте, сторінку не знайдено</p>
-//       <Link to="/" className="nav-link">
-//         На головну
-//       </Link>
-//     </div>
-//   );
-// }
-// pages/404.js
-// pages/404.js
 import React from "react";
 import Layout from "../components/Layout";
 import { FormattedMessage } from "react-intl";
-import LanguageProvider from "../components/LanguageProvider"; // Adjust the import path
 
 const NotFoundPage = () => {
   return (

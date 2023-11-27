@@ -91,20 +91,6 @@ export default function Contacts() {
                 kuzh_iv@ukr.net
               </a>
             </div>
-            {/* <div className="contact-section">
-              <h4 className="subtitle">
-                <FormattedMessage id="productCatalog" />
-              </h4>
-              <a
-                className="link"
-                href="https://teks-ika.prom.ua"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <img className="icon" src={prom} alt="prom.ua" />
-                Prom.ua
-              </a>
-            </div> */}
           </div>
           <iframe
             className="frame"

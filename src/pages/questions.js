@@ -1,7 +1,6 @@
 import React from "react";
 import { FormattedMessage } from "react-intl";
 import Layout from "../components/Layout";
-import InstagramIcon from "@mui/icons-material/Instagram";
 
 export default function Questions() {
   return (
@@ -63,7 +62,6 @@ export default function Questions() {
                   <FormattedMessage id="question2Option1Span" />
                 </span>
               </p>
-
               <p>
                 - <FormattedMessage id="question2Option2" />
                 <span className="text-grey">
