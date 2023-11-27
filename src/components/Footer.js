@@ -27,7 +27,7 @@ export default function Footer() {
             flexDirection: "row",
             justifyContent: "space-between",
             alignItems: "center",
-            gap: "30px",
+            gap: isSmallScreen ? "0px" : "30px",
             fontFamily: "'Raleway', sans-serif",
           }}
         >
@@ -37,7 +37,7 @@ export default function Footer() {
             align="left"
             className="site-title"
             sx={{
-              fontFamily: "'Raleway', sans-serif"
+              fontFamily: "'Raleway', sans-serif",
             }}
           >
             <FormattedMessage id="footer.site" />
@@ -49,7 +49,7 @@ export default function Footer() {
             flexDirection: isSmallScreen ? "column" : "row",
             justifyContent: "space-between",
             alignItems: "center",
-            gap: "20px",
+            gap: isSmallScreen ? "7px" : "20px",
           }}
         >
           <Box

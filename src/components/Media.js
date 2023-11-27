@@ -2,7 +2,7 @@ import * as React from "react";
 import Card from "@mui/joy/Card";
 import CardCover from "@mui/joy/CardCover";
 import intro from "../assets/images/intro.mp4";
-import poster from "../assets/images/poster.jpeg";
+import poster from "../assets/images/poster.png";
 
 export default function Media() {
   return (
