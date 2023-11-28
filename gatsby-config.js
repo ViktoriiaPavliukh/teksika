@@ -25,9 +25,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-postcss",
       options: {
-        postCssPlugins: [
-          require("autoprefixer"),
-        ],
+        postCssPlugins: [require("autoprefixer")],
       },
     },
   ],
@@ -37,6 +35,10 @@ module.exports = {
     titles: {
       uk: 'ТОВ "ТЕКС-ІКА"',
       en: 'LLC "TEKS-IKA"',
+    },
+    descriptions: {
+      uk: "Оптова торгівля матеріалами і фурнітурою для пошиття білизни, купальників, спортивного одягу та іншого.",
+      en: "Wholesale trade of materials and accessories for the production of lingerie, swimwear, sportswear, and more.",
     },
   },
 };
