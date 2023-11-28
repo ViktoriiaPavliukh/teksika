@@ -10,7 +10,7 @@ export default function Footer() {
   const isSmallScreen = useMediaQuery("(max-width:768px)");
 
   return (
-    <Paper elevation={3} sx={{ paddingY: "5px" }}>
+    <Paper component="footer" elevation={3} sx={{ paddingY: "5px" }}>
       <Toolbar
         sx={{
           display: "flex",

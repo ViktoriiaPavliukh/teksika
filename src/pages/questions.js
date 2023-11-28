@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 export default function Questions() {
   return (
     <Layout>
-      <div className="questions">
+      <section className="questions">
         <h3 className="title">
           {" "}
           <FormattedMessage id="navbar.questions" />
@@ -109,7 +109,7 @@ export default function Questions() {
             </p>
           </li>
         </ol>
-      </div>
+      </section>
     </Layout>
   );
 }

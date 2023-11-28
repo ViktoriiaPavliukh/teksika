@@ -9,7 +9,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 export default function Contacts() {
   return (
     <Layout>
-      <div className="contacts">
+      <section className="contacts">
         <h3 className="title">
           {" "}
           <FormattedMessage id="navbar.contacts" />
@@ -100,7 +100,7 @@ export default function Contacts() {
             title="Google Maps"
           ></iframe>
         </div>
-      </div>
+      </section>
     </Layout>
   );
 }

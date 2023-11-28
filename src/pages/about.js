@@ -5,7 +5,7 @@ import { FormattedMessage } from "react-intl";
 export default function About() {
   return (
     <Layout>
-      <div className="about">
+      <section className="about">
         <h2 className="title">
           <FormattedMessage id="navbar.aboutUs" />
         </h2>
@@ -21,7 +21,7 @@ export default function About() {
         <p className="text">
           <FormattedMessage id="productsOnStock" />
         </p>
-      </div>
+      </section>
     </Layout>
   );
 }

@@ -6,12 +6,12 @@ import { FormattedMessage } from "react-intl";
 export default function Catalog() {
   return (
     <Layout>
-      <div className="catalog">
+      <section className="catalog">
         <h3 className="title">
           <FormattedMessage id="catalog" />
         </h3>
         <PromLinks />
-      </div>
+      </section>
     </Layout>
   );
 }

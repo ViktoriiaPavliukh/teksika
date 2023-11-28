@@ -32,7 +32,6 @@ export default function Layout({ children }) {
       {({ locale, switchLanguage }) => (
         <div>
           <Helmet>
-            {console.log(data.site.siteMetadata.descriptions[locale])}
             <meta charSet="utf-8" />
             <meta
               name="description"
@@ -41,9 +40,9 @@ export default function Layout({ children }) {
             <title>{titles[locale]}</title>
           </Helmet>
           <Navbar />
-          <div className="content">
+          <main className="content">
             <div> {children}</div>
-          </div>
+          </main>
           <Footer />
         </div>
       )}
