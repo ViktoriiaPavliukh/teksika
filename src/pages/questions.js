@@ -18,6 +18,7 @@ export default function Questions() {
             <div className="text-list">
               <a
                 className="link"
+                aria-label="Location on Google Maps"
                 href="https://www.google.com/maps?q=Київ, Дубровицька, 28, 3й поверх, Україна, 04114"
               >
                 <FormattedMessage id="question1Option1" />

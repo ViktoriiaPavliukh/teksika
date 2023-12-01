@@ -40,5 +40,6 @@ module.exports = {
       uk: "Матеріали і фурнітура для пошиття білизни, купальників, спортивного одягу та іншого | Оптова торгівля",
       en: "Materials and accessories for the production of lingerie, swimsuits, sportswear, and more | Wholesale trade",
     },
+    siteUrl: "https://teksika.kyiv.ua",
   },
 };

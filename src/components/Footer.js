@@ -65,6 +65,7 @@ export default function Footer() {
               href=" https://www.instagram.com/teksika9/"
               rel="noopener noreferrer"
               target="_blank"
+              aria-label="Instagram"
             >
               <InstagramIcon
                 color="#694173"
@@ -80,6 +81,7 @@ export default function Footer() {
               href="https://teks-ika.prom.ua"
               rel="noopener noreferrer"
               target="_blank"
+              aria-label="Prom"
             >
               <img
                 src={prom}
@@ -112,10 +114,18 @@ export default function Footer() {
               }}
             />
             <Box>
-              <a className="link phone" href="tel:+380674560787">
+              <a
+                className="link phone"
+                href="tel:+380674560787"
+                aria-label="phone"
+              >
                 + (380) 67 456 07 87
               </a>
-              <a className="link phone" href="tel:+380731571765">
+              <a
+                className="link phone"
+                href="tel:+380731571765"
+                aria-label="phone"
+              >
                 + (380) 73 157 17 65
               </a>
             </Box>
@@ -132,6 +142,7 @@ export default function Footer() {
               href="https://www.google.com/maps?q=Київ, Дубровицька, 28, 3й поверх, Україна, 04114"
               rel="noopener noreferrer"
               target="_blank"
+              aria-label="address"
             >
               <FormattedMessage id="address" />
             </a>

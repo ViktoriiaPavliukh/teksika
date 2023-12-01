@@ -46,6 +46,7 @@ const ExternalLinksList = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="link-prom"
+            aria-label="link to Prom.ua"
           >
             <p className="btn-prom">{link.label}</p>
           </a>

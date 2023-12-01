@@ -25,6 +25,7 @@ export default function Contacts() {
                 href="https://www.google.com/maps?q=Київ, Дубровицька, 28, 3й поверх, Україна, 04114"
                 rel="noopener noreferrer"
                 target="_blank"
+                aria-label="Company Address on Google Maps"
               >
                 <FormattedMessage id="address" />
               </a>
@@ -50,7 +51,11 @@ export default function Contacts() {
               </h4>
               <ul className="manager-list">
                 <li>
-                  <a className="link" href="tel:+380674560787">
+                  <a
+                    className="link"
+                    href="tel:+380674560787"
+                    aria-label="phone"
+                  >
                     <div className="icons-list">
                       <TelegramIcon className="social" />
                       <FontAwesomeIcon icon={faViber} className="social" />
@@ -72,6 +77,7 @@ export default function Contacts() {
                     href=" https://www.instagram.com/teksika9/"
                     rel="noopener noreferrer"
                     target="_blank"
+                    aria-label="Instagram"
                   >
                     <InstagramIcon
                       className="social"
@@ -87,7 +93,11 @@ export default function Contacts() {
             </div>
             <div className="contact-section">
               <p className="subtitle">Email: </p>
-              <a className="link" href="mailto:kuzh_iv@ukr.net">
+              <a
+                className="link"
+                href="mailto:kuzh_iv@ukr.net"
+                aria-label="email"
+              >
                 kuzh_iv@ukr.net
               </a>
             </div>

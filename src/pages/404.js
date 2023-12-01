@@ -11,7 +11,7 @@ const NotFoundPage = () => {
           <FormattedMessage id="notFound.message" />
         </p>
         <p>
-          <a href="/" className="nav-link">
+          <a href="/" className="nav-link" aria-label="Navigate to Home">
             <FormattedMessage id="homeDirection" />
           </a>
         </p>
