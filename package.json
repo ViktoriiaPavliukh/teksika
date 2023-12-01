@@ -22,7 +22,7 @@
     "@mui/joy": "^5.0.0-beta.15",
     "@mui/material": "^5.14.17",
     "autoprefixer": "^10.4.16",
-    "gatsby": "^5.12.4",
+    "gatsby": "^5.12.11",
     "gatsby-plugin-manifest": "^5.12.3",
     "gatsby-plugin-postcss": "^6.12.0",
     "gatsby-plugin-react-helmet": "^6.12.0",
