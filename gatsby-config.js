@@ -37,8 +37,8 @@ module.exports = {
       en: 'LLC "TEKS-IKA"',
     },
     descriptions: {
-      uk: "Оптова торгівля матеріалами і фурнітурою для пошиття білизни, купальників, спортивного одягу та іншого.",
-      en: "Wholesale trade of materials and accessories for the production of lingerie, swimwear, sportswear, and more.",
+      uk: "Матеріали і фурнітура для пошиття білизни, купальників, спортивного одягу та іншого | Оптова торгівля",
+      en: "Materials and accessories for the production of lingerie, swimsuits, sportswear, and more | Wholesale trade",
     },
   },
 };
